@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>C:\Users\jlchavez\Documents\GitHub\WebPx.Patterns\src\Signing\WebPx6.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyName>WebPx.Patterns</AssemblyName>
+  </PropertyGroup>
+
+  <Import Project="..\WebPx.Patterns.Shared\WebPx.Patterns.Shared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <None Include="..\Signing\WebPx6.pfx" Link="WebPx6.pfx" />
+  </ItemGroup>
+
+</Project>

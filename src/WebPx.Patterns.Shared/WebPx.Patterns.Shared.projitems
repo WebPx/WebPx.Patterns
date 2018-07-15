@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>2ff6ae02-e283-47c2-85fa-60c86bf623df</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>WebPx</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DataPagedItems.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DataPageEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DataPageEventHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\IDeletableRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\IKeyedRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\IPagedRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\IRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\IRepositoryDelete.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\IRepositoryList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\IRepositoryPagedList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\ISimpleRepository.cs" />
+  </ItemGroup>
+</Project>
